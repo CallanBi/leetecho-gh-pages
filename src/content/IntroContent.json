@@ -1,13 +1,14 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Leetecho",
+  "text": "你展示和发布 LeetCode 代码的方式。Leetecho 是一款有可视化图形界面的自动生成 LeetCode 题解和笔记（以 md 文件作为载体）并发布到代码托管平台的产品。",
   "button": [
     {
-      "title": "Explore"
+      "title": "下载",
+      "color": "#2688f0"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+
+      "title": "快速开始"
     }
   ]
 }

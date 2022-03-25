@@ -1,9 +1,9 @@
-import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
-import Container from "../../common/Container";
+import { Row, Col, Typography } from 'antd';
+import { withTranslation } from 'react-i18next';
+import { SvgIcon } from '../../common/SvgIcon';
+import Container from '../../common/Container';
 
-import i18n from "i18next";
+import i18n from 'i18next';
 import {
   FooterSection,
   Title,
@@ -19,7 +19,7 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
-} from "./styles";
+} from './styles';
 
 interface SocialLinkProps {
   href: string;
@@ -47,8 +47,8 @@ const Footer = ({ t }: any) => {
 
   return (
     <>
-      <FooterSection>
-        <Container>
+      {/* <FooterSection> */}
+      {/* <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
@@ -124,27 +124,27 @@ const Footer = ({ t }: any) => {
               </LanguageSwitchContainer>
             </Col>
           </Row>
-        </Container>
-      </FooterSection>
+        </Container> */}
+      {/* </FooterSection> */}
       <Extra>
         <Container border={true}>
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
+            style={{ paddingTop: '3rem' }}
           >
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
                   src="logo.svg"
                   aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  width="156.8px"
+                  height="24"
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-              <SocialLink
+              {/* <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
               />
@@ -161,11 +161,21 @@ const Footer = ({ t }: any) => {
                 src="medium.svg"
               />
               <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
+              </a> */}
+              <section
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <section>
+                  Made by{' '}
+                  <Typography.Link href="https://github.com/CallanBi">
+                    @CallanBi
+                  </Typography.Link>
+                </section>
+              </section>
             </FooterContainer>
           </Row>
         </Container>

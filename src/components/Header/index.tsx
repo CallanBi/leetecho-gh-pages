@@ -1,9 +1,8 @@
-import { useState } from "react";
-import { Row, Col, Drawer } from "antd";
-import { withTranslation } from "react-i18next";
-import Container from "../../common/Container";
-import { SvgIcon } from "../../common/SvgIcon";
-import { Button } from "../../common/Button";
+import { useState } from 'react';
+import { Row, Col, Drawer } from 'antd';
+import { withTranslation } from 'react-i18next';
+import Container from '../../common/Container';
+import { SvgIcon } from '../../common/SvgIcon';
 import {
   HeaderSection,
   LogoContainer,
@@ -14,10 +13,14 @@ import {
   Label,
   Outline,
   Span,
-} from "./styles";
+} from './styles';
+import { GithubOutlined } from '@ant-design/icons';
+import { useRouter } from '../../hooks';
 
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
+
+  const router = useRouter();
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -28,31 +31,28 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+        <CustomNavLinkSmall
+          onClick={() => {
+            router?.push('./docs');
+          }}
+        >
+          <Span>{t('文档')}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() => {
+            router?.push('./questions');
+          }}
         >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
+          <Span>{t('常见问题')}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => {}}>
+          <GithubOutlined
+            onClick={() => {
+              window.open('https://github.com/CallanBi/Leetecho', '_blank');
+            }}
+          />
         </CustomNavLinkSmall>
       </>
     );
@@ -63,7 +63,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <SvgIcon src="logo.svg" width="156.8px" height="24" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -73,7 +73,7 @@ const Header = ({ t }: any) => {
           </Burger>
         </Row>
         <Drawer closable={false} visible={visible} onClose={onClose}>
-          <Col style={{ marginBottom: "2.5rem" }}>
+          <Col style={{ marginBottom: '2.5rem' }}>
             <Label onClick={onClose}>
               <Col span={12}>
                 <Menu>Menu</Menu>

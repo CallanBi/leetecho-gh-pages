@@ -1,8 +1,13 @@
 {
   "name": "leetecho-gh-page",
   "version": "0.1.0",
+  "homepage": "https://callanbi.github.io/Leetecho",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.42",
     "@types/react-dom": "^17.0.14",
@@ -13,10 +18,13 @@
     "i18next": "^19.9.2",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-xhr-backend": "^3.2.2",
+    "markdown-navbar": "^1.4.3",
+    "query-string": "^7.1.1",
     "react": "^17.0.2",
     "react-awesome-reveal": "^3.8.1",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.16.1",
+    "react-markdown": "^8.0.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
@@ -26,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,5 +52,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.2",
+    "@types/markdown-navbar": "^1.4.0",
+    "gh-pages": "^3.2.3"
   }
 }

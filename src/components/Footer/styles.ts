@@ -1,15 +1,16 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { COLOR_PALETTE } from '../../const/theme';
 
-export const FooterSection = styled("footer")`
+export const FooterSection = styled('footer')`
   background: rgb(241, 242, 243);
   padding: 2.5rem 0;
 `;
 
-export const Title = styled("h4")`
+export const Title = styled('h4')`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: ${COLOR_PALETTE.LEETECHO_BLACK};
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -29,7 +30,7 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const Extra = styled("section")`
+export const Extra = styled('section')`
   background: rgb(241, 242, 243);
   position: relative;
   width: 100%;
@@ -38,12 +39,12 @@ export const Extra = styled("section")`
   padding-bottom: 2rem;
 `;
 
-export const LogoContainer = styled("div")`
+export const LogoContainer = styled('div')`
   display: flex;
   position: relative;
 `;
 
-export const Para = styled("div")`
+export const Para = styled('div')`
   color: #18216d;
   font-size: 14px;
   width: 70%;
@@ -62,32 +63,32 @@ export const Large = styled(Link)<any>`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: ${COLOR_PALETTE.LEETECHO_BLUE};
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: ${COLOR_PALETTE.LEETECHO_BLUE};
   }
 `;
 
-export const Chat = styled("p")`
-  color: #18216d;
+export const Chat = styled('p')`
+  color: ${COLOR_PALETTE.LEETECHO_BLACK};
   max-width: fit-content;
-  border-bottom: 1px solid #18216d;
+  border-bottom: 1px solid ${COLOR_PALETTE.LEETECHO_BLACK};
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    color: ${COLOR_PALETTE.LEETECHO_BLACK};
   }
 `;
 
-export const Empty = styled("div")`
+export const Empty = styled('div')`
   position: relative;
   height: 53px;
 `;
 
-export const FooterContainer = styled("div")`
+export const FooterContainer = styled('div')`
   max-width: 510px;
   width: 100%;
   display: flex;
@@ -121,28 +122,26 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: ${COLOR_PALETTE.LEETECHO_BLUE};
     }
   }
 `;
 
-export const Language = styled("h4")`
+export const Language = styled('h4')`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
-
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
   }
 `;
 
-export const Label = styled("label")`
+export const Label = styled('label')`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: ${COLOR_PALETTE.LEETECHO_BLACK};
   display: block;
   margin-bottom: 2rem;
-  font-family: "Motiva Sans Bold", serif;
+  font-family: 'Motiva Sans Bold', serif;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -150,7 +149,7 @@ export const Label = styled("label")`
   }
 `;
 
-export const LanguageSwitch = styled("div")<any>`
+export const LanguageSwitch = styled('div')<any>`
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 
@@ -163,7 +162,7 @@ export const LanguageSwitch = styled("div")<any>`
   }
 `;
 
-export const LanguageSwitchContainer = styled("div")`
+export const LanguageSwitchContainer = styled('div')`
   display: flex;
   justify-content: space-between;
   width: 85px;

@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import { COLOR_PALETTE } from '../const/theme';
 
 export const Styles = createGlobalStyle`
 
@@ -32,7 +33,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #18216d;
+        color: ${COLOR_PALETTE.LEETECHO_LIGHT_BLUE};
     }
 
     input,
@@ -40,9 +41,9 @@ export const Styles = createGlobalStyle`
         border-radius: 4px;
         border: 0;
         background: rgb(241, 242, 243);
-        transition: all 0.3s ease-in-out;  
+        transition: all 0.3s ease-in-out;
         outline: none;
-        width: 100%;  
+        width: 100%;
         padding: 1rem 1.25rem;
 
         :focus-within {
@@ -57,23 +58,24 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
         font-size: 56px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
           font-size: 47px;
         }
-      
+
         @media only screen and (max-width: 414px) {
           font-size: 32px;
         }
     }
 
     p {
-        color: #18216d;
-        font-size: 21px;        
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 21px;
         line-height: 1.41;
     }
 
@@ -87,10 +89,10 @@ export const Styles = createGlobalStyle`
         color: #2E186A;
 
         :hover {
-            color: #2e186a;
+            color: ${COLOR_PALETTE.LEETECHO_LIGHT_BLUE};
         }
     }
-    
+
     *:focus {
         outline: none;
     }
