@@ -45,7 +45,7 @@ const Header = ({ t }: any) => {
             router?.push('./questions');
           }}
         >
-          <Span>{t('常见问题')}</Span>
+          <Span>{t('常见问题和迭代计划')}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => {}}>
           <GithubOutlined
