@@ -3,7 +3,7 @@ import { COLOR_PALETTE } from '../const/theme';
 
 export const Styles = createGlobalStyle`
 
-    @font-face {
+    /* @font-face {
         font-family: "Motiva Sans Light";
         src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
         font-style: normal;
@@ -13,13 +13,14 @@ export const Styles = createGlobalStyle`
         font-family: "Motiva Sans Bold";
         src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
         font-style: normal;
-    }
+    } */
 
 
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     }
 
 
@@ -40,7 +41,7 @@ export const Styles = createGlobalStyle`
     textarea {
         border-radius: 4px;
         border: 0;
-        background: rgb(241, 242, 243);
+        background: ${COLOR_PALETTE.LEETECHO_INPUT_BACKGROUND};
         transition: all 0.3s ease-in-out;
         outline: none;
         width: 100%;
@@ -52,41 +53,116 @@ export const Styles = createGlobalStyle`
         }
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1 {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
         color: ${COLOR_PALETTE.LEETECHO_BLACK};
-        font-size: 56px;
+        font-size: 32px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
-          font-size: 47px;
+          font-size: 30px;
         }
 
         @media only screen and (max-width: 414px) {
-          font-size: 32px;
+          font-size: 28px;
+        }
+    };
+
+    h2 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 28px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 28px;
+        }
+
+        @media only screen and (max-width: 414px) {
+          font-size: 26px;
         }
     }
 
-    p {
+    h3 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
         color: ${COLOR_PALETTE.LEETECHO_BLACK};
-        font-size: 21px;
-        line-height: 1.41;
+        font-size: 26px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 24px;
+        }
+
+        @media only screen and (max-width: 414px) {
+          font-size: 22px;
+        }
     }
 
-    h1 {
-        font-weight: 600;
+    h4 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 24px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 22px;
+        }
+
+        @media only screen and (max-width: 414px) {
+          font-size: 20px;
+        }
+    }
+    h5 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 22px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 20px;
+        }
+
+        @media only screen and (max-width: 414px) {
+          font-size: 18px;
+        }
+    }
+    h6 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 20px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 18px;
+        }
+
+        @media only screen and (max-width: 414px) {
+          font-size: 16px;
+        }
+    }
+
+    hr {
+        margin: 1.2rem 0;
+    }
+
+    p {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+        color: ${COLOR_PALETTE.LEETECHO_BLACK};
+        font-size: 15px;
+        line-height: 1.41;
     }
 
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: ${COLOR_PALETTE.LEETECHO_BLUE};
 
         :hover {
             color: ${COLOR_PALETTE.LEETECHO_LIGHT_BLUE};

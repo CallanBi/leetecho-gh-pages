@@ -35,7 +35,7 @@ const QuickReferFeature: React.FC<QuickReferFeatureProps> = (
             fontSize: '1.2rem',
           }}
         >
-          发布过程提示友好，清晰可控。
+          比官方体验更胜一筹的 AC 代码与笔记速览，每一次对已 AC 题目的回顾都有新的灵感。
         </Typography.Paragraph>
       </section>
     </FeatureComponent>

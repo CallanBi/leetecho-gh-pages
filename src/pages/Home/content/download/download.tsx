@@ -7,6 +7,7 @@ import { ContentWrapper } from '../MiddleBlock/styles';
 import { Button } from '../../../../common/Button';
 import { COLOR_PALETTE } from '../../../../const/theme';
 import { SvgIcon } from '../../../../common/SvgIcon';
+import { useRouter } from '../../../../hooks';
 
 const { Title } = Typography;
 
@@ -18,6 +19,8 @@ interface DownloadProps {
 
 const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
   const { id = 'download' } = props;
+
+  const router = useRouter();
 
   return (
     <FeatureComponent direction={'left'} layout={'vertical'}>
@@ -106,7 +109,9 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
                 padding: '0.5rem 1rem',
               }}
               fixedWidth={true}
-              onClick={() => {}}
+              onClick={() => {
+                router.push('./docs');
+              }}
             >
               查看文档
             </Button>
