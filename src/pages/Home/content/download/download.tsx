@@ -48,7 +48,7 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
             marginTop: '1rem',
           }}
         >
-          <Col xs={7} sm={7} md={7} lg={7} xl={7}>
+          {/* <Col xs={7} sm={7} md={7} lg={7} xl={7}>
             <Button
               style={{
                 padding: '0.5rem 1rem',
@@ -102,9 +102,26 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
                 </Col>
               </Row>
             </Button>
+          </Col> */}
+          <Col xs={7} sm={7} md={7} lg={7} xl={7}>
+            <Button
+              style={{
+                padding: '0.5rem 1rem',
+              }}
+              fixedWidth={true}
+              onClick={() => {
+                window.open(
+                  'https://github.com/CallanBi/Leetecho/releases/tag/latest',
+                  '_blank'
+                );
+              }}
+            >
+              下载
+            </Button>
           </Col>
           <Col xs={7} sm={7} md={7} lg={7} xl={7}>
             <Button
+              color={COLOR_PALETTE.LEETECHO_BLUE}
               style={{
                 padding: '0.5rem 1rem',
               }}
