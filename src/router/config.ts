@@ -14,6 +14,16 @@ const routes = [
     exact: true,
     component: 'CommonQuestions',
   },
+  {
+    path: ['/iterationPlan'],
+    exact: true,
+    component: 'IterationPlan',
+  },
+  {
+    path: ['/changelog'],
+    exact: true,
+    component: 'Changelog',
+  },
 ];
 
 export default routes;

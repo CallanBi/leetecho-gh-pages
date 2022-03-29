@@ -15,7 +15,7 @@ const Changelog: React.FC<ChangelogProps> = (props: ChangelogProps) => {
     <>
       <DocPage
         importFunc={async () => {
-          const [err, md] = await to(import('../../md/getStarted.md'));
+          const [err, md] = await to(import('../../md/changelog.md'));
           if (err) {
             throw err;
           }

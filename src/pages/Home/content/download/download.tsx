@@ -105,6 +105,7 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
           </Col> */}
           <Col xs={7} sm={7} md={7} lg={7} xl={7}>
             <Button
+              color={COLOR_PALETTE.LEETECHO_BLUE}
               style={{
                 padding: '0.5rem 1rem',
               }}
@@ -121,7 +122,6 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
           </Col>
           <Col xs={7} sm={7} md={7} lg={7} xl={7}>
             <Button
-              color={COLOR_PALETTE.LEETECHO_BLUE}
               style={{
                 padding: '0.5rem 1rem',
               }}
