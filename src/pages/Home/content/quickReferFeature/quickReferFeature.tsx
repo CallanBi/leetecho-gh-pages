@@ -29,13 +29,14 @@ const QuickReferFeature: React.FC<QuickReferFeatureProps> = (
           alignItems: 'flex-end',
         }}
       >
-        <Typography.Title level={2}>可快速检索的题目和笔记</Typography.Title>
+        <Typography.Title level={2}>可快速检索的题目和一站式笔记管理方案</Typography.Title>
         <Typography.Paragraph
           style={{
             fontSize: '1.2rem',
           }}
         >
           比官方体验更胜一筹的 AC 代码与笔记速览，每一次对已 AC 题目的回顾都有新的灵感。
+          代理 LeetCode NoteBook实现笔记检索和管理闭环，一站式笔记管理体验。
         </Typography.Paragraph>
       </section>
     </FeatureComponent>
