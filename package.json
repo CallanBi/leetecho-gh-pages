@@ -1,7 +1,7 @@
 {
   "name": "leetecho-gh-page",
   "version": "0.1.0",
-  "homepage": "https://callanbi.github.io/Leetecho",
+  "homepage": "https://callanbi.github.io/leetecho",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",

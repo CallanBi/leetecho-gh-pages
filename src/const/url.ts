@@ -1,1 +1,1 @@
-export const baseUrl = 'Leetecho/';
+export const baseUrl = 'leetecho/';

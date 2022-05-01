@@ -112,7 +112,7 @@ const Download: React.FC<DownloadProps> = (props: DownloadProps) => {
               fixedWidth={true}
               onClick={() => {
                 window.open(
-                  'https://github.com/CallanBi/Leetecho/releases/tag/latest',
+                  'https://github.com/CallanBi/leetecho/releases/tag/latest',
                   '_blank'
                 );
               }}

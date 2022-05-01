@@ -64,7 +64,7 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => {}}>
           <GithubOutlined
             onClick={() => {
-              window.open('https://github.com/CallanBi/Leetecho', '_blank');
+              window.open('https://github.com/CallanBi/leetecho', '_blank');
             }}
           />
         </CustomNavLinkSmall>
