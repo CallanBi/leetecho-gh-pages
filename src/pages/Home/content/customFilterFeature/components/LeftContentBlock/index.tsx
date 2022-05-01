@@ -18,8 +18,14 @@ const LeftContentBlock = ({ t, id }: LeftContentBlockProps) => {
             <Row>
               <Col span={24}>
                 <Content>
-                  <Typography.Title level={2}>可自定义的题集筛选</Typography.Title>
-                  <Typography.Paragraph>
+                  <Typography.Title level={2}>
+                    可自定义的题集筛选
+                  </Typography.Title>
+                  <Typography.Paragraph
+                    style={{
+                      fontSize: '1.2rem',
+                    }}
+                  >
                     使用 leetecho
                     提供的模板语法能力，选择你所需要展示的题集作为封面索引。
                   </Typography.Paragraph>
@@ -28,9 +34,9 @@ const LeftContentBlock = ({ t, id }: LeftContentBlockProps) => {
             </Row>
           </Row>
           <Row
-            // style={{
-            //   marginLeft: '-2rem',
-            // }}
+          // style={{
+          //   marginLeft: '-2rem',
+          // }}
           >
             <SvgIcon src={'custom-filter-svg.svg'} width="100%" height="" />
           </Row>
